@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tối ưu SEO cho Voice Counter -->
+    <meta name="description" content="Voice Counter - Ứng dụng luyện phát âm tiếng Anh và tiếng Trung thông minh, chấm điểm bằng AI ngoại tuyến và đếm số lần luyện tập.">
+    <title>Voice Counter - Luyện phát âm & Đếm số lần đọc</title>
+    <!-- Cập nhật logo của Voice Counter -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Giữ nguyên cấu trúc Toolbar từ template LalaMuzic -->
+    <div class="toolbar">
+        <div class="toolbar-logo">
+            <img src="logo.png" alt="Voice Counter Logo">
+            Voice Counter
+        </div>
+        <div class="toolbar-actions">
+            <button class="lang-btn" id="langToggle" onclick="toggleLanguage()">VI / EN</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <img src="logo.png" alt="Voice Counter" class="hero-logo">
+            <h1 class="hero-slogan" data-i18n="slogan">Hoàn thiện phát âm, tự tin giao tiếp</h1>
+            <p class="hero-subtitle" data-i18n="hero_desc">Ứng dụng luyện phát âm thông minh sử dụng AI ngoại tuyến (Zipformer & CREPE) để chấm điểm chi tiết và tự động đếm số lần luyện tập của bạn.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.lathedo.voicecounter" class="playstore-btn" target="_blank">
+                <i class="material-icons">shop</i>
+                <span data-i18n="download">Tải trên Google Play</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Feature 1: Bố cục Zig-zag từ template LalaMuzic -->
+    <section class="feature-section bg-white">
+        <div class="container-inner layout-zigzag">
+            <div class="feature-visual">
+                <div class="mockup-shape">
+                    <div class="device-frame">
+                        <img src="player.png" alt="Màn hình chấm điểm" title="Giao diện Voice Counter">
+                    </div>
+                </div>
+            </div>
+            <div class="feature-text">
+                <h2 class="feature-title" data-i18n="box1_title">Đánh giá Phát âm bằng AI Offline</h2>
+                <p class="feature-desc" data-i18n="box1_desc">
+                    Xử lý giọng nói siêu tốc ngay trên thiết bị mà không cần kết nối Internet, đảm bảo quyền riêng tư tuyệt đối.
+                </p>
+                <ul class="feature-list mt-4">
+                    <li>
+                        <i class="material-icons accent-icon">memory</i>
+                        <span data-i18n="icon_filter">Mô hình Zipformer: Bóc tách và nhận diện chính xác từng âm vị (Phoneme).</span>
+                    </li>
+                    <li>
+                        <i class="material-icons accent-icon">graphic_eq</i>
+                        <span data-i18n="icon_speed">CREPE Pitch Tracking: Đo lường đường cao độ để chấm điểm thanh điệu (Tone) tiếng Trung.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2: Bố cục Reverse Zig-zag từ template LalaMuzic -->
+    <section class="feature-section bg-alt">
+        <div class="container-inner layout-zigzag reverse">
+            <div class="feature-visual">
+                <div class="mockup-shape">
+                    <div class="device-frame">
+                        <img src="dictation.png" alt="Màn hình phân tích">
+                    </div>
+                </div>
+            </div>
+            <div class="feature-text">
+                <h2 class="feature-title" data-i18n="box2_title">Phân tích chi tiết & Đếm thông minh</h2>
+                <p class="feature-desc" data-i18n="box2_desc">
+                    Không chỉ báo đúng/sai, ứng dụng chỉ ra chính xác lỗi phát âm của bạn ở đâu để khắc phục.
+                </p>
+                <ul class="feature-list mt-4">
+                    <li>
+                        <i class="material-icons accent-icon">spellcheck</i>
+                        <span data-i18n="icon_ab">Đối chiếu Pinyin/IPA để phát hiện lỗi thanh mẫu, vận mẫu.</span>
+                    </li>
+                    <li>
+                        <i class="material-icons accent-icon">looks_one</i>
+                        <span data-i18n="icon_fsrs">Tự động đếm số lần đọc đúng, giúp bạn dễ dàng theo dõi tiến độ luyện tập.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="super__free">
+            <h3 class="super__free-h3" data-i18n="free_title">Bắt đầu hành trình luyện giọng ngay hôm nay</h3>
+            <p class="super__free-description" data-i18n="free_desc">
+                Cải thiện kỹ năng phát âm của bạn mỗi ngày với trợ lý AI ngay trong túi.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.lathedo.voicecounter" class="playstore-btn mt-4" target="_blank" style="margin-top: 24px; display: inline-flex;">
+                <i class="material-icons">shop</i>
+                <span data-i18n="download_cta">Tải trên Google Play</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2026 Voice Counter. All rights reserved.</p>
+        <a href="policy_vi.html" id="link-policy" data-i18n="policy">Chính sách bảo mật</a> |
+        <a href="terms_vi.html" id="link-terms" data-i18n="terms">Điều khoản sử dụng</a> |
+        <a href="licenses_vi.html" id="link-licenses" data-i18n="licenses">Mã nguồn mở</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
